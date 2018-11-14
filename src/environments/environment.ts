@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyDbioE_-e2bb5CzzFvPMS3ZptQ9QGETQt0',
-    authDomain: 'from-video.firebaseapp.com',
-    databaseURL: 'https://from-video.firebaseio.com',
-    projectId: 'from-video',
-    storageBucket: 'from-video.appspot.com',
-    messagingSenderId: '668768040730'
+    apiKey: 'AIzaSyAFvyT6SD75F8Cdcoo4FbbeP55h23An3UM',
+    authDomain: 'stud-lab.firebaseapp.com',
+    databaseURL: 'https://stud-lab.firebaseio.com',
+    projectId: 'stud-lab',
+    storageBucket: 'stud-lab.appspot.com',
+    messagingSenderId: '699835822120'
   }
 };
 

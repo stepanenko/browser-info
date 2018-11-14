@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { EmployeeService } from 'src/app/shared/employee.service';
+import { StudentService } from 'src/app/shared/student.service';
 import { MatTableDataSource, MatSort, MatPaginator } from '@angular/material';
 import { DepartmentService } from 'src/app/shared/department.service';
 
@@ -16,11 +16,11 @@ export class EmployeeListComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   searchKey: string;
 
-  constructor(private service: EmployeeService,
+  constructor(private service: StudentService,
     private departmentService: DepartmentService) { }
 
   ngOnInit() {
-    this.service.getEmployees().subscribe(
+    this.service.getStudents().subscribe(
       (list) => {
         const array = list.map((item) => {
           const departmentName = this.departmentService.getDepartmentName(item.payload.val()['department']);

@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeComponent } from './employees/employee/employee.component';
 import { MaterialModule } from './material/material.module';
-import { EmployeeService } from './shared/employee.service';
+import { StudentService } from './shared/student.service';
 import { DepartmentService } from './shared/department.service';
 import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
 
@@ -31,7 +31,7 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
     AngularFireModule.initializeApp(environment.firebase),
     FormsModule
   ],
-  providers: [ EmployeeService, DepartmentService ],
+  providers: [ StudentService, DepartmentService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

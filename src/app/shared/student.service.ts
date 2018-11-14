@@ -5,11 +5,11 @@ import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
 @Injectable({
   providedIn: 'root'
 })
-export class EmployeeService {
+export class StudentService {
 
   constructor(private firebase: AngularFireDatabase) { }
 
-  employeeList: AngularFireList<any>;
+  studentsList: AngularFireList<any>;
 
   form: FormGroup = new FormGroup({
     $key: new FormControl(null),
@@ -37,40 +37,40 @@ export class EmployeeService {
     });
   }
 
-  getEmployees() {
-    this.employeeList = this.firebase.list('employees');
-    return this.employeeList.snapshotChanges();
+  getStudents() {
+    this.studentsList = this.firebase.list('students');
+    return this.studentsList.snapshotChanges();
   }
 
-  insertEmployee(employee) {
-    this.employeeList.push({
-      fullName: employee.fullName,
-      email: employee.email,
-      mobile: employee.mobile,
-      city: employee.city,
-      gender: employee.gender,
-      department: employee.department,
-      hireDate: employee.hireDate,
-      isPermanent: employee.isPermanent
+  insertStudent(student) {
+    this.studentsList.push({
+      fullName: student.fullName,
+      email: student.email,
+      mobile: student.mobile,
+      city: student.city,
+      gender: student.gender,
+      department: student.department,
+      hireDate: student.hireDate,
+      isPermanent: student.isPermanent
     });
   }
 
-  updateEmployee(employee) {
-    this.employeeList.update(employee.$key,
+  updateStudent(student) {
+    this.studentsList.update(student.$key,
       {
-        fullName: employee.fullName,
-        email: employee.email,
-        mobile: employee.mobile,
-        city: employee.city,
-        gender: employee.gender,
-        department: employee.department,
-        hireDate: employee.hireDate,
-        isPermanent: employee.isPermanent
+        fullName: student.fullName,
+        email: student.email,
+        mobile: student.mobile,
+        city: student.city,
+        gender: student.gender,
+        department: student.department,
+        hireDate: student.hireDate,
+        isPermanent: student.isPermanent
       });
   }
 
-  deleteEmployee($key: string) {
-    this.employeeList.remove($key);
+  deleteStudent($key: string) {
+    this.studentsList.remove($key);
   }
 
 }
