@@ -14,3 +14,7 @@
 - Total blocking time (TBT): measures the total amount of time between FCP and TTI where the main thread was blocked for long enough to prevent input responsiveness.
 
 - Cumulative layout shift (CLS): measures the cumulative score of all unexpected layout shifts that occur between when the page starts loading and when its lifecycle state changes to hidden.
+
+## Performance
+
+[Analyze runtime performance](https://developer.chrome.com/docs/devtools/evaluate-performance/)
