@@ -1,7 +1,6 @@
+# Browser
 
-# Browser Information
-
-## Important metrics to measure
+## Important metrics
 
 - First contentful paint (FCP): measures the time from when the page starts loading to when any part of the page's content is rendered on the screen.
 
