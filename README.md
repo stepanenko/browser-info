@@ -1,7 +1,10 @@
 # Browser
 
 A web browser is a software application that allows users to access and navigate the World Wide Web.  
-The basic steps of how a web browser works:
+The first web browser, WorldWideWeb, later renamed Nexus, was created by Sir Tim Berners-Lee in 1990.  
+The browser was released to the public in 1991, and it played a crucial role in the development of the World Wide Web  
+
+### The basic steps of how a web browser works:
 
 - User Input:
 
