@@ -1,6 +1,7 @@
 # Browser
 
-A web browser is a software application that allows users to access and navigate the World Wide Web. Here are the basic steps of how a web browser works:
+A web browser is a software application that allows users to access and navigate the World Wide Web.  
+The basic steps of how a web browser works:
 
 - User Input:
 
